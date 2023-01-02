@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.listen(3000,()=>{
-    console.log("servidor corriendo en el puerto 300");
+    console.log("servidor corriendo en el puerto 3000");
 })

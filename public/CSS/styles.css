@@ -1,0 +1,58 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+    color: black;
+}
+#botonSearch{
+    display: block;
+}
+.compra{
+    text-align: center;
+}
+#logoHand{
+    display: inline
+}
+#compraText{
+    display: inline;
+}
+.lista{
+    text-align: left;
+    display: inline;
+}
+.lista li a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width:50%
+}
+input{
+    display: block;
+}
+#menu{
+    max-width: 40px;
+    color: white;
+    background-color: #073dec;
+    text-align: center;
+    margin: auto;
+    padding: 5px 5px;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+}
+.titulares{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.descripciones{
+    font-size: 16px;
+}

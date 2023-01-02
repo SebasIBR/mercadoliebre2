@@ -6,33 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadoliebre</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/8347f32279.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/8347f32279.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <img src="img/logo-mercado-liebre.svg" alt="">
-        <h4>Lugar para poner la barra de busqueda</h4>
-        <h4>Comprá en cuotas y sin tarjetas de crédito</h4>
-        <ul>
+        <input type="search" placeholder="Buscar productos, marcas" autocomplete="off">
+        <button id="botonSearch" type="submit"><i class="fas fa-search"></i></button>
+        <section class="compra">
+            <i class="fa-solid fa-hand-holding-dollar" id="logoHand"></i>
+            <h4 id="compraText">Comprá en cuotas y sin tarjetas de crédito</h4>
+        </section>
+        <ul class="lista" type="none">
             <li><a href="">Ofertas</a></li>
             <li><a href="">Tiendas Oficiales</a></li>
             <li><a href="">Vender</a></li>
             <li><a href="">Ayuda</a></li>
         </ul>
-        <ul>
-            <li><a href="">Creá tu cuenta</a></li>
-            <li><a href="">Ingresa</a></li>
-            <li><a href="">Mis compras</a></li>
+        <ul class="lista" type="none">
+            <li><a href="">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+            <li><a href="">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
         </ul>
+        <div id="menu"><i class="fas fa-bars"></i>
+        </div>
+        
     </header>
     <main>
         <section>
-            <h4>Basado en tu ultima visita</h4>
+            <h4 class="titulares">Basado en tu ultima visita</h4>
             <article>
                 <img src="img/img-cafetera-moulinex.jpg" alt="" width="60%">
-                <h4>$6.770</h4>
-                <h4>40% OFF</h4>
-                <h4><strong>Cafetera Moulinex</strong></h4>
+                <h4 class="precios">$6.770</h4>
+                <h4 class="descuentos">40% OFF</h4>
+                <h4 class="descripciones"><strong>Cafetera Moulinex</strong></h4>
             </article>
             <article>
                 <img src="img/img-macbook-pro-2019.jpg" alt="" width="60%">
@@ -54,7 +67,7 @@
             </article>
         </section>
         <section>
-            <h4>Ofertas</h4>
+            <h4 class="titulares">Ofertas</h4>
             <article>
                 <img src="img/img-cafetera-moulinex.jpg" alt="" width="60%">
                 <h4>$6.770</h4>
