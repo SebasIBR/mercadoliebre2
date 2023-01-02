@@ -36,7 +36,7 @@ input{
 #menu{
     max-width: 40px;
     color: white;
-    background-color: #073dec;
+    background-color: #1259c3;
     text-align: center;
     margin: auto;
     padding: 5px 5px;
@@ -55,4 +55,25 @@ input{
 }
 .descripciones{
     font-size: 16px;
+}
+footer{
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+footer section article{
+    display: block;
+    padding-top: 10px;
+ }
+footer section article i{
+    color: #1259c3;
+    font-size: 2em;
+    margin: 0%; 
+}
+footer section article h4{
+    color: #666;
+
+}
+footer section article p{
+    color: #666;
 }
