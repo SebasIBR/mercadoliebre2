@@ -1,6 +1,35 @@
+/* 
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Íconos
+
+
+*/
+
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    background-color: rgb(224, 224, 224);
+
 }
 
 header{
@@ -44,6 +73,31 @@ input{
     display: block;
     font-size: 18px;
 }
+main{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+
+}
+main section article{
+    margin: 10px;
+}
+main section article img{
+    width:100%;
+}
+main section article div{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+main section article div h4{
+    margin: 0;
+}
+main section article i{
+    padding-right: 20%;
+    padding-bottom: 15px;
+    color: green;
+}
 .titulares{
     font-size: 24px;
 }
@@ -52,9 +106,12 @@ input{
 }
 .descuentos{
     font-size: 16px;
+    color: green;
 }
 .descripciones{
+    padding-top: 15px;
     font-size: 16px;
+    color: rgb(170, 170, 170) ;
 }
 footer{
     text-align: center;
