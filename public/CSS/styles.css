@@ -23,46 +23,67 @@ Descripciones: 16px
 */
 
 
+* {
+    box-sizing: border-box;
+}
 
-
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background-color: rgb(224, 224, 224);
+    margin: 0;
 
 }
 
-header{
+header {
     background-color: #EAC926;
     color: black;
+    padding: 15px;
 }
-#botonSearch{
-    display: block;
+
+header input {
+    display: inline-block;
 }
-.compra{
+#logo {
+    display: block
+}
+
+#botonSearch {
+    display: inline-block;
+}
+
+.compra {
     text-align: center;
 }
-#logoHand{
+
+#logoHand {
     display: inline
 }
-#compraText{
-    display: inline;
+
+#compraText {
+    display: inline-block;
+    padding: 10px;
 }
-.lista{
+
+.lista {
     text-align: left;
-    display: inline;
+    display: none;
 }
-.lista li a{
+
+.lista li a {
     text-decoration: none;
     color: black;
 }
-img{
-    width:50%
+
+img {
+    width: 50%
 }
-input{
+
+input {
     display: block;
 }
-#menu{
+
+#menu {
     max-width: 40px;
     color: white;
     background-color: #1259c3;
@@ -73,64 +94,109 @@ input{
     display: block;
     font-size: 18px;
 }
-main{
+
+main {
     width: 90%;
     margin: auto;
     background-color: rgb(224, 224, 224);
 
 }
-main section article{
+
+main section article {
     margin: 10px;
 }
-main section article img{
-    width:100%;
+
+main section article img {
+    width: 100%;
 }
-main section article div{
+
+main section article div {
     border-top: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
 }
-main section article div h4{
+
+main section article div h4 {
     margin: 0;
 }
-main section article i{
+
+main section article i {
     padding-right: 20%;
     padding-bottom: 15px;
     color: green;
 }
-.titulares{
-    font-size: 24px;
+
+.barra {
+    width: 100%;
+
 }
-.precios{
+
+.titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+.precios {
     font-size: 18px;
 }
-.descuentos{
+
+.descuentos {
     font-size: 16px;
     color: green;
 }
-.descripciones{
+
+.descripciones {
     padding-top: 15px;
     font-size: 16px;
-    color: rgb(170, 170, 170) ;
+    color: #666
 }
-footer{
+
+footer {
     text-align: center;
     display: block;
     padding: 10px;
 }
-footer section article{
+
+footer section article {
     display: block;
     padding-top: 10px;
- }
-footer section article i{
+}
+
+footer section article i {
     color: #1259c3;
     font-size: 2em;
-    margin: 0%; 
+    margin: 0%;
 }
-footer section article h4{
+
+footer section article h4 {
     color: #666;
 
 }
-footer section article p{
+
+footer section article p {
     color: #666;
+}
+
+@media (min-width: 361px) {
+
+    /*Navegacion tablets*/
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .lista {
+        text-align: left;
+        display: inline;
+    }
+
+    #menu{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    /*Navegacion en desktop*/
+
 }
