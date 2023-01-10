@@ -24,6 +24,8 @@ Descripciones: 16px
 
 
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -44,6 +46,7 @@ header {
 header input {
     display: inline-block;
 }
+
 #logo {
     display: block
 }
@@ -121,9 +124,18 @@ main section article div h4 {
 }
 
 main section article i {
-    padding-right: 20%;
-    padding-bottom: 15px;
     color: green;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    margin-top: -30px;
 }
 
 .barra {
@@ -137,12 +149,15 @@ main section article i {
 }
 
 .precios {
+    display: inline-block;
     font-size: 18px;
 }
 
 .descuentos {
+    display: inline-block;
     font-size: 16px;
     color: green;
+    margin-left: 5px;
 }
 
 .descripciones {
@@ -189,7 +204,7 @@ footer section article p {
         display: inline;
     }
 
-    #menu{
+    #menu {
         display: none;
     }
 
