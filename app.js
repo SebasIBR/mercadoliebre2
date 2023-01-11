@@ -15,8 +15,8 @@ if (actualizacion == false){
 }
 app.use(express.static(path.join(__dirname, 'public')))
 
-const server = true
-if (server == true) {
+const serverLocal = false
+if (serverLocal == true) {
 app.listen(80,()=>{
     console.log("servidor corriendo en el puerto 80");
 })
