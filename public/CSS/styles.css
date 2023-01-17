@@ -192,7 +192,9 @@ footer {
     display: block;
     padding: 10px;
 }
-
+footer section{
+    margin: 20px 0px;
+}
 footer section article {
     display: block;
     padding-top: 10px;
@@ -211,6 +213,84 @@ footer section article h4 {
 
 footer section article p {
     color: #666;
+}
+/* Formularios */
+/* Register */
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+}
+form input{
+    margin: 10px 10px;
+    padding: 10px;
+    max-width: 90%;
+    color: #666 ;
+}
+form label{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.tipoPerfil{
+    color: #666;
+    font-size: 15px;
+}
+.intereses{
+    padding-left: 15px;
+}
+.intereses li label{
+    color: #666;
+    font-size: 15px;
+}
+.botones{
+    display: flex;
+    justify-content:space-around;
+    margin-top:15px;
+}
+.botones button{
+    width: 40%;
+    border: 5px solid rgb(224, 224, 224);
+    border-radius:5%;
+    padding: 5px;
+}
+.boton-cancelar{
+    color: white;
+    background-color: rgb(197, 47, 47);
+}
+.boton-enviar{
+    color: white;
+    background-color: #1259c3;
+}
+.perfil{
+    display: flex;
+    justify-content: space-around;
+}
+/* Login */
+.formLogin{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.usuarioLogin{
+    margin: 20px 0px;
+    width: 100%;
+}
+.contraseñaLogin{
+    width: 100%;
+    margin: 20px 0px;
+
+}
+.boton-enviar-login{
+    margin:20px 0px;
+    width: 90%;
+    border: 5px solid rgb(224, 224, 224);
+    border-radius:10%;
+    padding: 5px;
+    color: white;
+    background-color: #1259c3;
 }
 
 @media (min-width: 361px) {
@@ -288,12 +368,17 @@ footer section article p {
     .descripciones{
         font-size: 12px;
     }
+    
 }
 
 @media (min-width: 769px) {
     /*Navegacion en desktop*/
     main section article{
         width: 20%;
+    }
+    footer section{
+        display: flex;
+        margin: 20px 0px;
     }
 
 }
