@@ -17,25 +17,29 @@
 <body>
     <header>
         <div class="top-bar-header">
-            <img src="img/logo-mercado-liebre.svg" alt="" id="logo">
+            <section class="top-bar-header-logo">
+                <img src="img/logo-mercado-liebre.svg" alt="" id="logo">
             <input type="search" placeholder="Buscar productos, marcas" autocomplete="off">
             <button id="botonSearch" type="submit"><i class="fas fa-search"></i></button>
+            </section>            
+            <section class="top-bar-header-compra">
+                <i class="fa-solid fa-hand-holding-dollar" id="logoHand"></i>
+                <h4 id="compraText">Comprá en cuotas y sin tarjetas de crédito</h4>
+            </section>
         </div>
-        <section class="compra">
-            <i class="fa-solid fa-hand-holding-dollar" id="logoHand"></i>
-            <h4 id="compraText">Comprá en cuotas y sin tarjetas de crédito</h4>
-        </section>
-        <ul class="lista" type="none">
-            <li><a href="">Ofertas</a></li>
-            <li><a href="">Tiendas Oficiales</a></li>
-            <li><a href="">Vender</a></li>
-            <li><a href="">Ayuda</a></li>
-        </ul>
-        <ul class="lista" type="none">
-            <li><a href="">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
-            <li><a href="">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
-            <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
-        </ul>
+        <nav class="bottom-bar-header">
+            <ul class="lista" type="none">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="lista" type="none">
+                <li><a href="">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+                <li><a href="">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
         <div id="menu"><i class="fas fa-bars"></i></div>
     </header>
     <section>

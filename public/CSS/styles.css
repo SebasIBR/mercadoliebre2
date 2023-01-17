@@ -40,34 +40,39 @@ body {
 header {
     background-color: #EAC926;
     color: black;
-    padding: 15px;
+    padding: 5px;
 }
 
 header input {
     display: inline-block;
-    width: 60%;
+    max-width: 40%;
     padding: 4px;
     margin-left: 10%;   
 }
 
 #logo {
     /* display: inline-block; */
-    width: 40%;
+    max-width: 40%;
 }
 
 #botonSearch {
     display: inline-block;
     
+    
 }
 .top-bar-header{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
-
-.compra {
-    text-align: center;
+.top-bar-header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 #logoHand {
@@ -76,7 +81,6 @@ header input {
 
 #compraText {
     display: inline-block;
-    padding: 10px;
 }
 
 .lista {
@@ -94,7 +98,7 @@ img {
 }
 
 input {
-    display: block;
+    display: inline-block;
 }
 
 #menu {
@@ -103,10 +107,13 @@ input {
     background-color: #1259c3;
     text-align: center;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 5px 5px;
     border-radius: 5px;
     display: block;
     font-size: 18px;
+    
 }
 
 main {
@@ -129,13 +136,14 @@ main section article div {
     border-top: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
+    position: relative;
 }
 
 main section article div h4 {
     margin: 0;
 }
 
-main section article i {
+main section article div i {
     color: green;
     display: block;
     font-size: 16px;
@@ -146,7 +154,7 @@ main section article i {
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 50px;
+    left: 80%;
     margin-top: -30px;
 }
 
@@ -208,13 +216,35 @@ footer section article p {
 @media (min-width: 361px) {
 
     /*Navegacion tablets*/
+
+    .top-bar-header{
+        justify-content: space-around;
+    }
+    .top-bar-header-logo{
+        max-width: 45%;
+    }
+    .top-bar-header-compra{
+        max-width: 45%;
+    }
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .bottom-bar-header{
+        display: flex;
+        justify-content: space-between;
+        
+    }
 
     .lista {
-        text-align: left;
-        display: inline;
+        display: flex;
+        justify-content: space-around;
+        margin: 5% 0%;
+        width: 40%;
+    }
+
+    .lista li{
+        /* display: flex; */
+        margin: 0% 1%;
     }
 
     #menu {
@@ -227,43 +257,43 @@ footer section article p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        /* justify-content: center; */
         
         
     }
     main section article{
-        width: 45%;
-        margin: auto;
-        align-self: stretch;   
+        width: 40%;
+        margin: 1.5% auto;
+
     }
-    main section article i {
-       /* position: absolute; */
-        left: 300px;
-        margin-top: 0px;
-    }
+
     main section article div  {
         /* text-align: left; */
-        padding-left: 0;
-        margin-left: 0;
+        /* padding-left: 0; */
+        /* margin-left: 0; */
+        padding: 7pxe;
         
     }
     .titulares{
         display: inline-block;
     }
     .precios{
-        font-size: 10px;
-
-
+        font-size: 12px;
     }
     .descuentos{
-        font-size: 10px;
-
+        font-size: 12px;
     }
     .descripciones{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
 @media (min-width: 769px) {
     /*Navegacion en desktop*/
+    main section article{
+        width: 20%;
+    }
 
 }
